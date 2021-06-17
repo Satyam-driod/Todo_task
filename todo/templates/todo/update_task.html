@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Todo_app</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href=" /static/css/main.css">
+</head>
+<body>
+
+	<div class="center-column">
+
+         <h5>Update task<h5>
+
+        <form method="POST" action="">
+	    {% csrf_token %}
+            {{form.title}}
+            <p><span>complete</span><span>{{form.complete}}</span></p>
+
+	    <input  class="btn btn-info"type="submit" name="Confirm">
+        </form>
+    </div>
+
+</body>
+</html>
+
+   
